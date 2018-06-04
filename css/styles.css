@@ -1,3 +1,6 @@
+a {
+  margin: 0;
+}
 html {
   font-family: 'Roboto', sans-serif;
 }
@@ -14,8 +17,14 @@ h2, h4 {
 .nav-links {
   margin-right: 20%;
 }
+.portfolio-project {
+  margin-bottom: 15px;
+}
 .selected-project {
   margin: 20px 0;
+}
+.separator {
+  color: #004080;
 }
 .top-nav {
   background-color: #004080;
