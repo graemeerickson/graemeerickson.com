@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1 maximum-scale=1.0, user-scalable=0">
   <!-- STYLESHEETS & FONTS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700|Allura">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Graeme Erickson</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top top-nav">
-    <a class="navbar-brand" href="#">Graeme Erickson</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav nav-links">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#about">About</a>
-        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-        <a class="nav-item nav-link" href="https://drive.google.com/file/d/1mywGjtTPIbelvplvTO0GIqYfUFXIZY6u/view?usp=sharing" target="_blank">Resume</a>
+  <nav class="top-nav">
+    <ul class="nav-links">
+      <div class="left-nav">
+        <li><a id="logo" href="#">GE</a></li>
       </div>
-    </div>
+      <div class="right-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="https://drive.google.com/open?id=1mywGjtTPIbelvplvTO0GIqYfUFXIZY6u" target="_blank">Resume</a></li>
+      </div>
+    </ul>
   </nav>
+  <article class="opening-section" id="about">
+    <p class="about-text">
+      <b>Hi, I'm Graeme.</b>
+      <br/><br/>
+      I'm interested in building software that delights users and benefits society. With full-stack web development
+      skills complemented by 6+ years of supporting Fortune 50 IT organizations, I bring both a business and technical
+      perspective to solving problems.
+    </p>
+    <img class="headshot img-responsive" src="images/graeme_erickson.jpg" />
+  </article>
   <div class="container">
-    <article class="main-section" id="about">
-      <h2>About Graeme</h2>
-      <p class="about-text">Motivated by the opportunity to build software that delights users and benefits society. With full-stack web development skills
-complemented by 6+ years of supporting Fortune 50 IT organizations, I bring both a business and technical perspective to solving problems.</p>
+    <article class="skills-section" id="skills">
     </article>
-    <article class="main-section" id="portfolio">
-      <h2>Featured Projects</h2>
+    <article class="projects-section" id="projects">
+      <h2>Projects</h2>
       <div class="row">
         <div class="col-12 col-lg-6 portfolio-project">
           <h4 class="selected-project">Blackjack Strategy</h4>
           <p>A single-player game intended to train a user to follow Blackjack basic strategy.</p>
-          <a href="https://graemeerickson.github.io/blackjack_strategy"><span>Demo</span></a>
+          <a href="https://graemeerickson.github.io/blackjack_strategy" target="_blank">
+            <span>Demo</span>
+          </a>
           <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/blackjack_strategy"><span>Code</span></a>
+          <a href="https://github.com/graemeerickson/blackjack_strategy" target="_blank">
+            <span>Code</span>
+          </a>
         </div>
         <div class="col-12 col-lg-6 portfolio-project">
           <h4 class="selected-project">Honeydew</h4>
           <p>A full-stack web app designed to fast-track the weekly meal-planning process.</p>
-          <a href="https://honeydew-app.herokuapp.com"><span>Demo</span></a>
+          <a href="https://honeydew-app.herokuapp.com" target="_blank">
+            <span>Demo</span>
+          </a>
           <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/honeydew"><span>Code</span></a>
+          <a href="https://github.com/graemeerickson/honeydew" target="_blank">
+            <span>Code</span>
+          </a>
         </div>
         <div class="col-12 col-lg-6 portfolio-project">
           <h4 class="selected-project">Ambassador</h4>
           <p>An app connecting prospective home-buyers with neighborhood ambassadors, built on React.js & the MERN stack.</p>
-          <a href="https://ambassador-graeme.herokuapp.com"><span>Demo</span></a>
+          <a href="https://ambassador-graeme.herokuapp.com" target="_blank">
+            <span>Demo</span>
+          </a>
           <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/ambassador"><span>Code</span></a>
+          <a href="https://github.com/graemeerickson/ambassador" target="_blank">
+            <span>Code</span>
+          </a>
         </div>
         <div class="col-12 col-lg-6 portfolio-project">
           <h4 class="selected-project">Project 4 - TBD</h4>
@@ -62,8 +82,10 @@ complemented by 6+ years of supporting Fortune 50 IT organizations, I bring both
       </div>
     </article>
   </div>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
+
 </html>
