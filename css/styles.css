@@ -106,46 +106,48 @@ html {
 
 /* PROJECTS SECTION */
 .project {
-  /*align-items: center;*/
   display: flex;
-  flex-grow: 1;
-  /*height: 200px;*/
-  margin: 10px;
+  margin: 0 10px 100px 10px;
   width: 100%;
-  /*max-width: 650px;*/
 }
 .project-details {
-  /*align-items: */
+  display: block;
+  flex-shrink: 0;
   font-size: 0.9em;
   margin: 0 15px;
+  max-width: 250px;
 }
 .project-name {
   color: #959ca6;
-  /*display: block;*/
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .project-screenshot {
-  /*display: block;*/
+  display: block;
   max-width: 600px;
-  /*margin: 0;
-  padding: 0;*/
 }
 .project-screenshots {
-  /*display: block;*/
-  /*width: 600px;*/
+  display: block;
   margin: 0;
+  max-width: 700px;
+  overflow: visible;
   padding: 0;
 }
 .section-projects {
+  width: 100%;
+}
+.section-projects-container {
   display: flex;
+  justify-content: center;
+  padding: 100px;
 }
 .section-title {
   color: #004080;
+  flex-shrink: 0;
   font-size: 1.2em;
   font-weight: bold;
-  /*letter-spacing: 1px;*/
+  /*margin-right: 20px;*/
   text-transform: uppercase;
   width: 150px;
 }
@@ -198,6 +200,9 @@ html {
     height: 19em;
     order: -1;
   }
+  .project {
+    flex-wrap: wrap;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -224,6 +229,8 @@ html {
   .headshot {
     height: 19em;
   }
+  .project {
+    flex-wrap: wrap;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
