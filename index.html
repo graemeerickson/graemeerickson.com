@@ -16,70 +16,105 @@
 </head>
 
 <body>
+  <!-- NAV -->
   <nav class="top-nav">
     <ul class="nav-links">
       <div class="left-nav">
         <li><a id="logo" href="#">GE</a></li>
       </div>
       <div class="right-nav">
-        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="https://drive.google.com/open?id=1mywGjtTPIbelvplvTO0GIqYfUFXIZY6u" target="_blank">Resume</a></li>
       </div>
     </ul>
   </nav>
+  <!-- WELCOME / ABOUT -->
   <article class="opening-section" id="about">
-    <p class="about-text">
-      <b>Hi, I'm Graeme.</b>
-      <br/><br/>
-      I'm interested in building software that delights users and benefits society. With full-stack web development
-      skills complemented by 6+ years of supporting Fortune 50 IT organizations, I bring both a business and technical
-      perspective to solving problems.
-    </p>
+    <div class="about-container">
+      <p class="about-text">
+        <b>Hi, I'm Graeme.</b>
+        <br/><br/>
+        I'm interested in building software that delights users and benefits society. Technology consultant turned web developer, I bring both a business and technical
+        perspective to solving problems.
+      </p><br/>
+      <p class="about-text-contact">
+        Get in touch:<br/>
+        <a href="https://github.com/graemeerickson" alt="Github" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/graemeerickson/" alt="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
+        <a href="mailto:graemeerickson@gmail.com" alt="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+      </p>
+    </div>
     <img class="headshot img-responsive" src="images/graeme_erickson.jpg" />
   </article>
   <div class="container">
+    <!-- SKILLS -->
     <article class="skills-section" id="skills">
     </article>
-    <article class="projects-section" id="projects">
-      <h2>Projects</h2>
-      <div class="row">
-        <div class="col-12 col-lg-6 portfolio-project">
-          <h4 class="selected-project">Blackjack Strategy</h4>
-          <p>A single-player game intended to train a user to follow Blackjack basic strategy.</p>
-          <a href="https://graemeerickson.github.io/blackjack_strategy" target="_blank">
-            <span>Demo</span>
-          </a>
-          <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/blackjack_strategy" target="_blank">
-            <span>Code</span>
-          </a>
+
+    <!-- PROJECTS -->
+    <article class="section-projects" id="projects">
+
+      <div class="section-title">Projects</div>
+      
+      <div class="project ambassador">
+        
+        <div class="project-screenshots">
+          <a href="https://ambassador-graeme.herokuapp.com" target="_blank"><img class="project-screenshot" src="images/project_screenshots_ambassador_v3.png" /></a>
         </div>
-        <div class="col-12 col-lg-6 portfolio-project">
-          <h4 class="selected-project">Honeydew</h4>
-          <p>A full-stack web app designed to fast-track the weekly meal-planning process.</p>
-          <a href="https://honeydew-app.herokuapp.com" target="_blank">
-            <span>Demo</span>
-          </a>
-          <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/honeydew" target="_blank">
-            <span>Code</span>
-          </a>
-        </div>
-        <div class="col-12 col-lg-6 portfolio-project">
-          <h4 class="selected-project">Ambassador</h4>
+        
+        <div class="project-details">
+          
+          <div class="project-name">Ambassador</div>
+          
           <p>An app connecting prospective home-buyers with neighborhood ambassadors, built on React.js & the MERN stack.</p>
-          <a href="https://ambassador-graeme.herokuapp.com" target="_blank">
-            <span>Demo</span>
-          </a>
+          <a href="https://ambassador-graeme.herokuapp.com" target="_blank"><span>Demo</span></a>
           <span class="separator">&nbsp;|&nbsp;</span>
-          <a href="https://github.com/graemeerickson/ambassador" target="_blank">
-            <span>Code</span>
-          </a>
+          <a href="https://github.com/graemeerickson/ambassador" target="_blank"><span>Code</span></a>
+          <br/><br/>
+          <span class="skill">Axios</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">Express</span>
+          <span class="skill">JS</span>
+          <span class="skill">Mapbox</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">React.js</span>
         </div>
-        <div class="col-12 col-lg-6 portfolio-project">
-          <h4 class="selected-project">Project 4 - TBD</h4>
-        </div>
+      
       </div>
+      <!-- <div class="project blackjack-strategy">
+        <h4 class="selected-project">Blackjack Strategy</h4>
+        <p>A single-player game intended to train a user to follow Blackjack basic strategy.</p>
+        <a href="https://graemeerickson.github.io/blackjack_strategy" target="_blank">
+          <span>Demo</span>
+        </a>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <a href="https://github.com/graemeerickson/blackjack_strategy" target="_blank">
+          <span>Code</span>
+        </a>
+      </div>
+      <div class="project honeydew">
+        <h4 class="selected-project">Honeydew</h4>
+        <p>A full-stack web app designed to fast-track the weekly meal-planning process.</p>
+        <a href="https://honeydew-app.herokuapp.com" target="_blank">
+          <span>Demo</span>
+        </a>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <a href="https://github.com/graemeerickson/honeydew" target="_blank">
+          <span>Code</span>
+        </a>
+      </div>
+      <div class="project travel-roulette">
+        <h4 class="selected-project">Travel Roulette</h4>
+        <p>An app that chooses your next vacation destination for you. Built using JS, Python, Django, and Postgres.</p>
+        <a href="#" target="_blank">
+          <span>Demo</span>
+        </a>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <a href="https://github.com/graemeerickson/travel-roulette" target="_blank">
+          <span>Code</span>
+        </a>
+      </div> -->
     </article>
   </div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
@@ -87,5 +122,4 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
-
 </html>
