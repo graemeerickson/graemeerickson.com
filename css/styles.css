@@ -3,8 +3,7 @@ h2, h4 {
   color: #004080;
 }
 html {
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Neue Helvetica';
+  font-family: 'Helvetica', sans-serif;
 }
 
 /* NAV */
@@ -97,25 +96,18 @@ html {
   margin: 5vh 8% 0 8%;
 }
 
-/* CONTAINER */
-.container {
-  margin: 0 5% 0 10%;
-  padding: 0;
-  width: 100%;
-}
-
 /* PROJECTS SECTION */
 .project {
   display: flex;
-  margin: 0 10px 100px 10px;
-  width: 100%;
+  margin-bottom: 100px;
+  margin-left: -5%;
+  width: 125%;
 }
 .project-details {
-  display: block;
   flex-shrink: 0;
   font-size: 0.9em;
-  margin: 0 15px;
-  max-width: 250px;
+  margin-left: 30px;
+  width: 125px;
 }
 .project-name {
   color: #959ca6;
@@ -123,19 +115,21 @@ html {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.project-screenshot {
-  border-radius: 5px;
-  display: block;
-  max-width: 600px;
-}
 .project-screenshots {
-  display: block;
-  margin: 0 15px 0 0;
+  margin: 0;
   max-width: 700px;
   overflow: visible;
-  padding: 0;
+}
+.project-screenshots img {
+  max-width: 100%;
+  vertical-align: bottom;
+  width: 100%;
+}
+.project-screenshots a {
+  display: block;
 }
 .section-projects {
+  max-width: 650px;
   width: 100%;
 }
 .section-projects-container {
@@ -150,7 +144,7 @@ html {
   font-weight: bold;
   /*margin-right: 20px;*/
   text-transform: uppercase;
-  width: 150px;
+  width: 200px;
 }
 .separator {
   color: #004080;
@@ -160,17 +154,17 @@ html {
   border-radius: 5px;
   display: inline-block;
   font-size: 0.6em;
-  margin-top: 0.5em;
   margin-right: 0.3em;
-  width: auto;
+  margin-top: 0.5em;
   padding: 7px 12px;
   text-transform: uppercase;
+  width: auto;
 }
 
 /*Responsiveness breakpoints */
 
 /* Extra, extra small devices (iPhone 5 and older, 320px and down) */
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .about-text {
     font-size: 1em;
     margin-top: 25px;
@@ -184,31 +178,17 @@ html {
     height: 15em;
     order: -1;
   }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 321px) and (max-width: 600px) {
-  .about-text {
-    font-size: 1em;
-    margin-top: 25px;
-    padding-right: 0;
+  .section-projects {
+    padding-left: 30px;
   }
-  .opening-section {
-    flex-direction: column;
-  }
-  .headshot {
-    border-radius: 5px;
-    height: 19em;
-    order: -1;
-  }
-  .project {
-    flex-wrap: wrap;
+  .section-projects-container {
+    padding: 50px 35px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /*@media only screen and (min-width: 600px) {...} */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .about-text {
     font-size: 1.2em;
     margin-top: 25px;
@@ -217,11 +197,37 @@ html {
   .headshot {
     height: 19em;
   }
+  .project {
+    display: block;
+    margin-bottom: 70px;
+    width: 100%;
+  }
+  .project-details {
+    margin-left: 0;
+    margin-top: 25px;
+    width: 100%;
+  }
+  .section-projects {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .section-projects-container {
+    display: block;
+  }
+  .section-title {
+    text-align: left;
+    width: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/*@media only screen and (min-width: 768px) {...} */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 850px) {
+  .section-title {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .about-text {
     font-size: 1.5em;
     margin-top: 25px;
@@ -231,11 +237,22 @@ html {
     height: 19em;
   }
   .project {
-    flex-wrap: wrap;
+    width: 105%;
+  }
+  .section-projects-container {
+    padding: 50px;
+  }
+  .section-title {
+    margin-right: 50px;
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {...}*/
+/* Large / extra large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 1280px) {
+  .project {
+    width: 115%;
+  }
+  .section-projects-container {
+    padding: 100px;
+  }
+}
