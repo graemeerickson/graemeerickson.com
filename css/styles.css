@@ -16,7 +16,7 @@ html {
 .nav-links {
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding-left: 8%;
   width: 100%;
 }
 .right-nav {
@@ -33,7 +33,6 @@ html {
   display: flex;
   flex-direction: row;
   height: 10vh;
-  padding: 0 8% 0 8%;
   width: 100%;
 }
 .top-nav a {
