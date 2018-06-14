@@ -1,7 +1,4 @@
 /* GLOBAL */
-h2, h4 {
-  color: #004080;
-}
 html {
   font-family: 'Helvetica', sans-serif;
 }
@@ -16,7 +13,7 @@ html {
 .nav-links {
   display: flex;
   list-style-type: none;
-  padding-left: 8%;
+  padding: 0 8%;
   width: 100%;
 }
 .right-nav {
