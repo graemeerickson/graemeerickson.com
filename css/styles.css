@@ -209,6 +209,17 @@ ul {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+  .skill-category {
+    margin-bottom: 25px;
+    margin-right: 5px;
+    width: 47%;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /*@media only screen and (min-width: 600px) {...} */
 @media screen and (max-width: 768px) {
