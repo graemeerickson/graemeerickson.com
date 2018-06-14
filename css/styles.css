@@ -2,12 +2,17 @@
 html {
   font-family: 'Helvetica', sans-serif;
 }
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
 
 /* NAV */
 #logo {
   color: #004080;
   font-family: 'Allura', cursive;
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: bold;
 }
 .nav-links {
@@ -92,7 +97,44 @@ html {
   margin: 5vh 8% 0 8%;
 }
 
+/* MAIN CONTENT */
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.section-content {
+  max-width: 650px;
+  width: 100%;
+}
+.section-title {
+  color: #004080;
+  flex-shrink: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  /*margin-right: 20px;*/
+  text-transform: uppercase;
+  width: 200px;
+}
+
+/* SKILLS SECTION */
+.skill-category-item {
+  font-size: 0.8em;
+  margin: 3px 0;
+}
+.skill-category-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* PROJECTS SECTION */
+.blackjack-strategy img {
+  border-radius: 10px;
+}
 .project {
   display: flex;
   margin-bottom: 100px;
@@ -124,28 +166,10 @@ html {
 .project-screenshots a {
   display: block;
 }
-.section-projects {
-  max-width: 650px;
-  width: 100%;
-}
-.section-projects-container {
-  display: flex;
-  justify-content: center;
-  padding: 100px;
-}
-.section-title {
-  color: #004080;
-  flex-shrink: 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  /*margin-right: 20px;*/
-  text-transform: uppercase;
-  width: 200px;
-}
 .separator {
   color: #004080;
 }
-.skill {
+.technologies {
   border: 1px solid #959ca6;
   border-radius: 5px;
   display: inline-block;
@@ -174,11 +198,11 @@ html {
     height: 15em;
     order: -1;
   }
-  .section-projects {
-    padding-left: 30px;
-  }
-  .section-projects-container {
+  .section {
     padding: 50px 35px;
+  }
+  .section-content {
+    padding-left: 30px;
   }
   .top-nav a {
     font-size: 1.2em;
@@ -206,12 +230,12 @@ html {
     margin-top: 25px;
     width: 100%;
   }
-  .section-projects {
+  .section {
+    display: block;
+  }
+  .section-content {
     padding-left: 50px;
     padding-top: 30px;
-  }
-  .section-projects-container {
-    display: block;
   }
   .section-title {
     text-align: left;
@@ -238,7 +262,7 @@ html {
   .project {
     width: 105%;
   }
-  .section-projects-container {
+  .section {
     padding: 50px;
   }
   .section-title {
@@ -251,7 +275,7 @@ html {
   .project {
     width: 115%;
   }
-  .section-projects-container {
+  .section {
     padding: 100px;
   }
 }
