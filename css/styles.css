@@ -133,6 +133,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+#skills {
+  padding-top: 20px;
+}
 
 /* PROJECTS SECTION */
 .blackjack-strategy img {
