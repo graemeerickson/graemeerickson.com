@@ -88,8 +88,11 @@ ul {
   font-size: 1.5em;
 }
 .headshot {
-  border-radius: 50%;
+  border-radius: 10px;
   height: 24em;
+  /*border-radius: 7px;
+  float: left;
+  height: 18em;*/
 }
 .opening-section {
   clear: both;
@@ -239,7 +242,8 @@ ul {
     padding-right: 0;
   }
   .headshot {
-    height: 19em;
+    height: auto;
+    width: 70%;
   }
   .project {
     display: block;
@@ -264,7 +268,7 @@ ul {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium screens */
 @media screen and (min-width: 769px) and (max-width: 850px) {
   .section-title {
     width: 150px;
@@ -291,12 +295,19 @@ ul {
   }
 }
 
-/* Large / extra large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+/* Large screens */
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .project {
     width: 115%;
   }
   .section {
     padding: 100px;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1601px) {
+  .opening-section {
+    margin: 5vh 25% 0 25%;
   }
 }
