@@ -33,9 +33,13 @@ ul {
 }
 .top-nav {
   align-items: center;
+  background-color: white;
   display: flex;
   flex-direction: row;
   height: 10vh;
+  opacity: 0.99;
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 .top-nav a {
