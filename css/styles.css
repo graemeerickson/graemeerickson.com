@@ -1,4 +1,7 @@
 /* GLOBAL */
+body {
+  margin-bottom: 0;
+}
 html {
   font-family: 'Helvetica', sans-serif;
 }
@@ -198,6 +201,14 @@ ul {
   text-transform: uppercase;
   width: auto;
 }
+
+/* FOOTER SECTION */
+/*.footer {
+  border-top: 1px solid #e4e3e3;
+  color: #959ca6;
+  padding: 10px;
+  text-align: center;
+}*/
 
 /*Responsiveness breakpoints */
 
