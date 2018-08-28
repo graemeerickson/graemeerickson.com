@@ -360,6 +360,10 @@ ul {
   body {
     margin: 5vh 19% 0 19%;
   }
+  .top-nav {
+    margin-left: -10%;
+    width: 120%;
+  }
   #more-arrow-container {
     bottom: 15%;
   }
