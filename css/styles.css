@@ -267,6 +267,9 @@ ul {
   .top-nav a {
     font-size: 1.2em;
   }
+  #more-arrow-container {
+    bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -356,5 +359,8 @@ ul {
 @media screen and (min-width: 1601px) {
   body {
     margin: 5vh 19% 0 19%;
+  }
+  #more-arrow-container {
+    bottom: 15%;
   }
 }
