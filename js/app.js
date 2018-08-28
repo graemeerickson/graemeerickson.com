@@ -7,6 +7,5 @@ let sr = ScrollReveal({
   });
 
 sr.reveal('.opening-section');
-sr.reveal('.section-title');
 sr.reveal('.skills');
 sr.reveal('.project');
